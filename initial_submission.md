@@ -21,7 +21,7 @@ Neutron radiation of the fuel inside of a nuclear reactor induces nuclear
 fission in certain nuclides like U235. The fission reaction causes the nucleus
 to break apart, releasing both energy and new nuclides, many of which are
 radioactive isotopes of smaller elements. This process is referred to as
-depletion or burnup. We model this process to design and lisence new reactors as
+depletion or burnup. We model this process to design and license new reactors as
 depletion can effect performance and determines when the fuel must be shuffled
 or replaced. The typical approach to modeling depletion requires solving the
 neutron transport equation to obtain reaction rates which govern the material
@@ -29,13 +29,13 @@ composition at the next time step. This process is repeated iteratively
 (transport-coupled depletion).
 
 OpenMC is an open-source neutron transport code with a built-in depletion
-module. OpenMC solves the transport equation via monte carlo particle transport,
+module. OpenMC solves the transport equation via Monte Carlo particle transport,
 which is accurate but expensive. OpenMC's depletion module was recently extended
 to enable depletion modeling without iteratively solving the transport equation
 (transport-independent depletion). Instead, the transport equation is solved
 once, and multigroup cross sections and fluxes are obtained from this solution.
 The multigroup cross sections and fluxes are used for every timestep of the
-depltion calculation. This method is accurate for the first timestep, but
+depletion calculation. This method is accurate for the first timestep, but
 degrades at further timesteps. Testing with a simple model indicated errors
 depend on the nuclide of interest. 
 
