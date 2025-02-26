@@ -1,20 +1,19 @@
 # Burning fuel for cheap! Transport-independent depletion in OpenMC
 
 ## Abstract
-OpenMC is a community developed open source software for simulating neutron
-transport, and includes a depletion module for
-calculating fuel burnup in nuclear reactors. Depletion calculations can be
-expensive as they require an iterative solution to the neutron transport
-equation and material composition updates. In a scenario where the material
-composition does not appreciably change, or we need reasonably accurate and
-low cost depletion, the transport solution may only need to be
-run once; the same cross sections used for the entire depletion calculation.
-We recently extended the depletion module in OpenMC to enable
-transport-independent depletion using multigroup cross sections and fluxes. This 
-talk will focus on the technical details of this feature, its validation, and
-areas where the feature has been used, in particular in calculating
-shutdown dose rates for fusion power applications as well as in performing
-depletion for fuel cycle modeling.
+OpenMC is an open-source, community-developed software for neutron transport
+simulations, featuring a depletion module for fuel burnup calculations in
+nuclear reactors. Depletion calculations can be expensive as they require an
+iterative solution to the neutron transport equation and material composition
+updates .In a scenario where the material composition does not appreciably
+change, or we need reasonably accurate and low cost depletion, the transport
+solution may only need to be run once; the same cross sections are used for the
+entire depletion calculation.  We recently extended the depletion module in
+OpenMC to enable transport-independent depletion using multigroup cross sections
+and fluxes. This talk will focus on the technical details of this feature, its
+validation, and areas where the feature has been used, in particular in
+calculating shutdown dose rates for fusion power applications as well as in
+performing depletion for fuel cycle modeling.
 
 ## Description
 Neutron radiation of the fuel inside of a nuclear reactor induces nuclear
