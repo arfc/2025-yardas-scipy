@@ -59,4 +59,7 @@ systems and open source software.
 ## Notes
 This could also be in the General track.
 Contributors to this work include Dr. Paul Romano, Prof. Madicken Munk, and 
-Prof. Kathryn Huff. 
+Prof. Kathryn Huff.
+[Transport independent depletion documentation](https://docs.openmc.org/en/stable/usersguide/depletion.html#transport-independent-depletion)
+[Shutdown Dose Rate paper](https://dx.doi.org/10.1088/1741-4326/ad32dd)
+[Fuel cycle paper](https://doi.org/10.1080/00295639.2024.2393940)
